@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TitanBuild | Get in Touch</title>
+    <meta name="description" content="Contact TitanBuild for premium construction services. Get in touch with our team for your next construction project.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="TitanBuild Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home2.html">Home2</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="mobile-theme-toggle">
+                    <button class="theme-toggle">🌙 Dark Mode</button>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle">🌙</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1>Let's Build Something Extraordinary</h1>
+                <p>Ready to transform your vision into reality? Get in touch with our team of construction experts and let's discuss your next project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background-color: var(--card-bg); color: var(--text-color);">
+                                <option value="">Select a service</option>
+                                <option value="commercial">Commercial Construction</option>
+                                <option value="residential">Residential Projects</option>
+                                <option value="industrial">Industrial Facilities</option>
+                                <option value="infrastructure">Infrastructure Development</option>
+                                <option value="renovation">Renovation & Restoration</option>
+                                <option value="consulting">Construction Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Main Office</h4>
+                            <p>123 Construction Boulevard<br>New York, NY 10001<br>United States</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>Main: (555) 123-4567<br>Project Inquiries: (555) 123-4568<br>Emergency: (555) 123-4569</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>General: info@titanbuild.com<br>Projects: projects@titanbuild.com<br>Careers: careers@titanbuild.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Office</h2>
+                <p>Conveniently located in the heart of New York City</p>
+            </div>
+            <div class="map-container">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+                    <p>Interactive Map</p>
+                    <p style="font-size: 0.875rem;">123 Construction Boulevard, New York, NY 10001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFICES SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Offices</h2>
+                <p>Serving clients across multiple locations</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>New York Headquarters</h3>
+                    <p><strong>Address:</strong> 123 Construction Boulevard<br>New York, NY 10001</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> ny@titanbuild.com</p>
+                    <p><strong>Services:</strong> Full construction services, consulting, project management</p>
+                </div>
+                <div class="card">
+                    <h3>Los Angeles Office</h3>
+                    <p><strong>Address:</strong> 456 Pacific Avenue<br>Los Angeles, CA 90001</p>
+                    <p><strong>Phone:</strong> (555) 987-6543</p>
+                    <p><strong>Email:</strong> la@titanbuild.com</p>
+                    <p><strong>Services:</strong> Commercial projects, residential, entertainment venues</p>
+                </div>
+                <div class="card">
+                    <h3>Chicago Office</h3>
+                    <p><strong>Address:</strong> 789 Michigan Avenue<br>Chicago, IL 60601</p>
+                    <p><strong>Phone:</strong> (555) 456-7890</p>
+                    <p><strong>Email:</strong> chicago@titanbuild.com</p>
+                    <p><strong>Services:</strong> Industrial facilities, infrastructure, renovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>How long does a typical project take?</h3>
+                    <p>Project timelines vary based on scope and complexity. Commercial projects typically take 12-24 months, while residential projects range from 6-18 months. We provide detailed timelines during the planning phase.</p>
+                </div>
+                <div class="card">
+                    <h3>Do you provide project financing?</h3>
+                    <p>While we don't directly provide financing, we work closely with trusted financial partners and can help connect you with financing options that suit your project needs.</p>
+                </div>
+                <div class="card">
+                    <h3>What areas do you serve?</h3>
+                    <p>We serve the entire United States with offices in New York, Los Angeles, and Chicago. Our team can travel to any location for large-scale projects.</p>
+                </div>
+                <div class="card">
+                    <h3>Are you licensed and insured?</h3>
+                    <p>Yes, TitanBuild is fully licensed, bonded, and insured in all states where we operate. We maintain comprehensive liability insurance and worker's compensation coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Join hundreds of satisfied clients who trust TitanBuild for their construction needs</p>
+            <a href="contact.html" class="btn btn-accent">Get Started Today</a>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+      <div class="footer-section">
+    <div class="footer-brand">
+        <a href="index.html">
+            <img src="assets/images/logo.svg" alt="TitanBuild Logo">
+        </a>
+    </div>
+
+    <p class="footer-description">
+        Premium construction solutions built on excellence, innovation, and trust.
+    </p>
+</div>   <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Commercial Construction</a></li>
+                        <li><a href="services.html"> Residential Projects</a></li>
+                        <li><a href="services.html">Industrial Facilities</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Construction Blvd</li>
+                        <li>New York, NY 10001</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@titanbuild.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TitanBuild. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

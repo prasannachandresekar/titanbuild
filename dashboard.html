@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TitanBuild | Project Management</title>
+    <meta name="description" content="TitanBuild dashboard for managing construction projects, tracking progress, and accessing project analytics.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="dashboard-page">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="TitanBuild Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home2.html">Home2</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Logout</a></li>
+                <li class="mobile-theme-toggle">
+                    <button class="theme-toggle">🌙 Dark Mode</button>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle">🌙</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- DASHBOARD CONTAINER -->
+    <div class="dashboard-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview" class="active">📊 Overview</a></li>
+                    <li><a href="#projects">🏗️ Projects</a></li>
+                    <li><a href="#clients">👥 Clients</a></li>
+                    <li><a href="#team">👷 Team</a></li>
+                    <li><a href="#schedule">📅 Schedule</a></li>
+                    <li><a href="#reports">📈 Reports</a></li>
+                    <li><a href="#settings">⚙️ Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- DASHBOARD HEADER -->
+            <div class="dashboard-header">
+                <div>
+                    <h1>Welcome back, John!</h1>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Here's what's happening with your projects today.</p>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-primary">+ New Project</button>
+                    <button class="btn btn-secondary">📅 Schedule</button>
+                </div>
+            </div>
+
+            <!-- DASHBOARD STATS -->
+            <div class="dashboard-stats">
+                <div class="stat-card-small">
+                    <h4>Active Projects</h4>
+                    <div class="number">12</div>
+                </div>
+                <div class="stat-card-small">
+                    <h4>Completed</h4>
+                    <div class="number">48</div>
+                </div>
+                <div class="stat-card-small">
+                    <h4>Total Revenue</h4>
+                    <div class="number">$2.8M</div>
+                </div>
+                <div class="stat-card-small">
+                    <h4>Team Members</h4>
+                    <div class="number">16</div>
+                </div>
+            </div>
+
+            <!-- PROJECTS OVERVIEW -->
+            <section id="projects" style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">Recent Projects</h2>
+                <div class="dashboard-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Client</th>
+                                <th>Status</th>
+                                <th>Progress</th>
+                                <th>Deadline</th>
+                                <th>Budget</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Skyline Tower</strong></td>
+                                <td>TechCorp Industries</td>
+                                <td><span style="background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">In Progress</span></td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <div style="flex: 1; background: var(--section-bg); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="width: 75%; height: 100%; background: var(--primary);"></div>
+                                        </div>
+                                        <span style="font-size: 0.875rem; color: var(--text-secondary);">75%</span>
+                                    </div>
+                                </td>
+                                <td>Jun 15, 2024</td>
+                                <td>$450,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Green Living Community</strong></td>
+                                <td>Sustainable Futures</td>
+                                <td><span style="background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">In Progress</span></td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <div style="flex: 1; background: var(--section-bg); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="width: 60%; height: 100%; background: var(--primary);"></div>
+                                        </div>
+                                        <span style="font-size: 0.875rem; color: var(--text-secondary);">60%</span>
+                                    </div>
+                                </td>
+                                <td>Aug 30, 2024</td>
+                                <td>$280,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tech Hub Complex</strong></td>
+                                <td>Innovation Labs</td>
+                                <td><span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Planning</span></td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <div style="flex: 1; background: var(--section-bg); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="width: 25%; height: 100%; background: var(--primary);"></div>
+                                        </div>
+                                        <span style="font-size: 0.875rem; color: var(--text-secondary);">25%</span>
+                                    </div>
+                                </td>
+                                <td>Dec 20, 2024</td>
+                                <td>$680,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Urban Plaza</strong></td>
+                                <td>City Development</td>
+                                <td><span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Review</span></td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <div style="flex: 1; background: var(--section-bg); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="width: 95%; height: 100%; background: var(--primary);"></div>
+                                        </div>
+                                        <span style="font-size: 0.875rem; color: var(--text-secondary);">95%</span>
+                                    </div>
+                                </td>
+                                <td>Apr 10, 2024</td>
+                                <td>$320,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- TEAM ACTIVITY -->
+            <section id="team" style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">Team Activity</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">JD</div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">John Davidson</h4>
+                                <p style="margin: 0; font-size: 0.875rem; color: var(--text-secondary);">Project Manager</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.875rem; margin-bottom: 0;">Completed site inspection for Skyline Tower. All safety protocols verified.</p>
+                        <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">2 hours ago</p>
+                    </div>
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #d97706); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">SM</div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Sarah Mitchell</h4>
+                                <p style="margin: 0; font-size: 0.875rem; color: var(--text-secondary);">Lead Architect</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.875rem; margin-bottom: 0;">Submitted final blueprints for Green Living Community review.</p>
+                        <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">5 hours ago</p>
+                    </div>
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #10b981, #059669); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">RJ</div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Robert Johnson</h4>
+                                <p style="margin: 0; font-size: 0.875rem; color: var(--text-secondary);">Site Supervisor</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.875rem; margin-bottom: 0;">Scheduled material delivery for Tech Hub Complex foundation work.</p>
+                        <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">1 day ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCHEDULE -->
+            <section id="schedule" style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">Upcoming Schedule</h2>
+                <div class="dashboard-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event</th>
+                                <th>Project</th>
+                                <th>Location</th>
+                                <th>Attendees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mar 18, 2024</strong></td>
+                                <td>Client Meeting</td>
+                                <td>Skyline Tower</td>
+                                <td>Conference Room A</td>
+                                <td>5 people</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mar 20, 2024</strong></td>
+                                <td>Site Inspection</td>
+                                <td>Green Living Community</td>
+                                <td>Project Site</td>
+                                <td>3 people</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mar 22, 2024</strong></td>
+                                <td>Design Review</td>
+                                <td>Tech Hub Complex</td>
+                                <td>Main Office</td>
+                                <td>8 people</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mar 25, 2024</strong></td>
+                                <td>Progress Meeting</td>
+                                <td>Urban Plaza</td>
+                                <td>Virtual</td>
+                                <td>12 people</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- PERFORMANCE CHARTS -->
+            <section id="reports">
+                <h2 style="margin-bottom: 1.5rem;">Performance Overview</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Project Completion Rate</h3>
+                        <div class="chart-container">
+                            <div style="text-align: center; padding: 2rem;">
+                                <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">92%</div>
+                                <p style="color: var(--text-secondary); margin-top: 0.5rem;">On-time completion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Revenue Growth</h3>
+                        <div class="chart-container">
+                            <div style="text-align: center; padding: 2rem;">
+                                <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">+24%</div>
+                                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Year over year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Client Satisfaction</h3>
+                        <div class="chart-container">
+                            <div style="text-align: center; padding: 2rem;">
+                                <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">4.8/5</div>
+                                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Average rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

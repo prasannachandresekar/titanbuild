@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Top Beam -->
+  <rect x="10" y="10" width="60" height="12" fill="#1a3a52"></rect>
+
+  <!-- Vertical Pillar -->
+  <rect x="34" y="22" width="12" height="38" fill="#1a3a52"></rect>
+
+  <!-- Base Accent -->
+  <rect x="10" y="60" width="60" height="6" fill="#d4af37"></rect>
+
+</svg>
