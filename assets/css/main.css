@@ -37,12 +37,22 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding-top: 70px;
+}
+
+/* Authentication pages don't have navbar, so remove padding */
+.login-page body,
+.signup-page body {
+  padding-top: 0;
 }
 
 /* TYPOGRAPHY */
@@ -86,12 +96,13 @@ p {
 /* NAVBAR */
 .navbar {
   background-color: var(--nav-bg);
-  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 10px var(--shadow);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -232,15 +243,35 @@ p {
   align-items: center;
 }
 
+.hero-small {
+  min-height: 60vh;
+  padding: 6rem 0 3rem;
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--section-bg) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.hero-small .hero-image img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 100%;
 }
 
 .hero-text h1 {
   margin-bottom: 1.5rem;
+  word-break: break-word;
 }
 
 .hero-text p {
@@ -261,9 +292,11 @@ p {
 
 .hero-image img {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px var(--shadow);
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 /* SECTIONS */
@@ -835,6 +868,18 @@ p {
     text-align: center;
   }
   
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
   .hero-buttons {
     justify-content: center;
   }
@@ -1000,4 +1045,51 @@ p {
   .mobile-menu {
     display: none;
   }
+}
+
+.map-container{
+    max-width: 900px;   /* controls width */
+    margin: 0 auto;     /* centers the map */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.nav-links a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--primary);
+  margin-top: 4px;
+  width: 100%;
+}
+
+/* SCROLL TO TOP BUTTON */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#scrollTopBtn:hover {
+  background: var(--secondary);
+  transform: translateY(-3px);
 }
